@@ -6,14 +6,13 @@ class A {
 	}
 }
 class B extends A {
- public String meth() {
+	@Override
+	public String meth() {
 	 return "Method is overridden in Extendend class B";
  }
 }
 public class Main {
   public static void main(String[] args){
-	  A a = new A();
-	  a.meth();
 	  B b = new B();
 	  b.meth();
   }
